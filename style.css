@@ -109,23 +109,43 @@ main {
 .card-signup {
     display: block;
     background-color: #f5f5f5;
-    text-align: center;
     border-radius: 8px;
-    align-items: center;
     font-family: sans-serif;
     font-size: small;
     color: white;
     padding: auto;
     box-sizing: border-box;
+    
 }
 
 .form-group {
-   padding: 420px;
-   border-radius: 10px;
+   padding: 200px;
+   border-radius: 8px;
    font-size: x-large;
    background-color: black;
    align-items: center;
-   text-align: center;
+   line-height: 1.8;
+   display: flex;
+   flex-direction: column; 
+   gap: 10px;
+   
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 3px;
+  
+    
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 700px;
+    height: 40px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+   
 
 }
  
@@ -136,7 +156,9 @@ main {
     border-radius: 5px;
     padding: 10px 15px;
     border: none;
-    align-items: flex-start;
+    width: 100px;
+    cursor: pointer;
+    
 
 }
 
