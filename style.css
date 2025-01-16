@@ -23,6 +23,9 @@ header {
     
 }
 
+
+
+
 h1 {
     font-size: 29px;
 }
@@ -39,8 +42,9 @@ h1 {
 .container img {
     height: 85px;
     width: auto;
-    margin-right: 5px;
-    
+    margin-right: 5px; 
+    display: block;
+    position: relative;
 
 }
 
@@ -53,6 +57,7 @@ h1 {
     margin-left: 10px;
     cursor: pointer;
     transform: background-color 0.3 ease;
+    
     
 }
 
@@ -99,10 +104,11 @@ main {
 
 .footer {
     background-color: black;
-    padding: 25px;
+    padding: 50px;
     font-family: sans-serif;
     color: aliceblue;
     text-align: center;
+    height: 60px;
 
 }
 
@@ -138,7 +144,7 @@ label {
     
 }
 
-input[type="text"], input[type="email"], input[type="password"], textarea {
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], textarea {
     width: 700px;
     height: 40px;
     padding: 8px;
