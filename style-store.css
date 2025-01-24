@@ -1,19 +1,75 @@
+@media (max-width: 500px) {
+    /* Estilos para telas com largura máxima de 768px (tablets) */
+    
+  }
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: ;
     color: white;
 
 }
+.image-container {
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    height: 200px; /* Ajuste o tamanho conforme necessário */
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-header {
-    text-align: center;
-    margin: 20px 0;
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    vertical-align: bottom;
+    background-color: #000;
+    
 }
+.buttons{
+    text-align: center;
+    padding: auto;
+    margin: auto;
+}
+
+
+.buttons button {
+    background-color: #2e2e2e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transform: background-color 0.3 ease;
+    text-align: center;
+    
+    
+}
+
+
+.buttons button:hover {
+    background-color: darkgrey;
+  }
+
+header{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
 }
@@ -66,3 +122,4 @@ header {
 .card button:hover {
     background-color: #444;
 }
+
