@@ -8,7 +8,8 @@ const products = [
     { id: 5, name: "iPhone 12", price: 10999, image: "iphone12.webp" },
     { id: 6, name: "iPhone 12 Pro Max", price: 8499, image: "iphone12promax.webp" },
     { id: 7, name: "iPhone 15 Plus", price: 6799, image: "iphone15plus.png" },
-    { id: 8, name: "iPhone 14 Pro Max", price: 4499, image: "iphone14max.webp" }
+    { id: 8, name: "iPhone 14 Pro Max", price: 4499, image: "iphone14max.webp" },
+    { id: 9, name: "iPhone 15 pro", price: 5799, image: "iphone14max.webp"}
 ];
 
 // Função para renderizar os produtos no DOM

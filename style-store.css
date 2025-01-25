@@ -1,8 +1,4 @@
-@media (max-width: 500px) {
-    /* Estilos para telas com largura máxima de 768px (tablets) */
-    
-  }
-body {
+}body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: white;
@@ -32,15 +28,26 @@ body {
     
 }
 .buttons{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding: auto;
     margin: auto;
 }
+div #font{
+    color: #000;
+    width: 70px;
+    height: 70px;
 
+}
+.fim{
+    background-color: rgb(56, 52, 52);
+    height: 75px;
+}
 
 .buttons button {
-    background-color: #2e2e2e;
-    color: white;
+    background-color: rgb(227, 227, 9);
+    color: black;
     border: none;
     border-radius: 5px;
     padding: 10px 15px;
