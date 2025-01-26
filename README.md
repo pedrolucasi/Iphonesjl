@@ -1,6 +1,6 @@
 # iPhonesJL
 
-**iPhonesJL** é um projeto desenvolvido para aprimorar a experiência de divulgação de produtos Apple. Com o objetivo de atender melhor seus clientes e ampliar o alcance dos anúncios, criamos uma página dedicada aos produtos.
+**iPhonesJL** é um projeto visa aprimorar a experiência de divulgação dos seus produtos Apple. Com o objetivo de atender melhor seus clientes e ampliar o alcance dos anúncios, criamos uma página dedicada aos produtos.
 
 ---
 
