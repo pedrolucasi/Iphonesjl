@@ -26,4 +26,4 @@ Siga os passos abaixo para executar o projeto:
 ---
 
 ## Colaboradores
- [![Colaborador 1](https://github.com/pedrolucasi.png?size=100)](https://github.com/pedrolucasi) | [![Colaborador 2](https://github.com/felipehttps.png?size=100)](https://github.com/felipehttps)
+ [![Colaborador 1](https://github.com/pedrolucasi.png?size=100)](https://github.com/pedrolucasi)  [![Colaborador 2](https://github.com/felipehttps.png?size=100)](https://github.com/felipehttps)
