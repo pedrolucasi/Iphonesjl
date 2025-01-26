@@ -1,3 +1,11 @@
+//document.getElementById('cardForm').addEventListener('submit', function (event) {
+   // event.preventDefault(); // Evita o comportamento padrão do formulário
+   // const nome = document.getElementById('nome').value;//
+   /// const email = document.getElementById('email').value;//
+   // alert(`Formulário enviado!\nNome: ${nome}\nE-mail: ${email}`);//
+    
+  //});
+
 // signup.js
 
 // Extrai e processa os dados do formulário
@@ -15,7 +23,6 @@ export function getFormData(formId) {
   
   return formData;
 }
-
 
 // Valida os dados do formulário
 export function validateFormData(data) {
@@ -57,3 +64,6 @@ export function setupSignupForm(formId) {
       alert(`Formulário enviado!\n${message}`);
   });
 }
+
+
+  
