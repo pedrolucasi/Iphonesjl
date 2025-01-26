@@ -19,10 +19,11 @@ Siga os passos abaixo para executar o projeto:
    $ git clone https://github.com/pedrolucasi/Iphonesjl.git
 2. Entre no diretorio:
    $ cd iphonesjl
-3. Instale as dependencias, se usa npm:
+3. Instale as dependencias:
+  # se usa npm:
    $ npm install
-4.Se usa yarn:
-  $ yarn
+  # Se usa yarn:
+   $ yarn
 ---
 
 ##Colaboradores
