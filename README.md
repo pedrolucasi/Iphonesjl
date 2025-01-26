@@ -26,3 +26,4 @@ Siga os passos abaixo para executar o projeto:
 ---
 
 ## Colaboradores
+https://github.com/pedrolucasi.png?size=100   https://github.com/felipehttps.png?size=100
