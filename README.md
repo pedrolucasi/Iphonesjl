@@ -25,4 +25,4 @@ Siga os passos abaixo para executar o projeto:
    $ yarn
 ---
 
-##Colaboradores
+## Colaboradores
