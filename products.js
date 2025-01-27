@@ -1,5 +1,3 @@
-
-// Arrey de produtos 
 export const products = [
     { id: 1, name: "iPhone 16 Pro e iPhone 16 Pro Max", price: 10499, image: "iphone16pro.png" },
     { id: 2, name: "iPhone 15 Pro Max", price: 7799, image: "iphone15pro.png" },
