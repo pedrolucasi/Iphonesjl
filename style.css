@@ -93,32 +93,37 @@ main {
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: #f5f5f5;
+    background-color: white;
     color: black;
     display: flex;
     align-items: flex-end;
     
 }
+.perfil{
+    margin-top: 100px;
+    padding-bottom: 70px;
+}
 
+#id{
+    height: 155px;
+    background-color: white;
+}
+#sem p{
+    
+}
 
 
 fieldset{
     display: flex;
     justify-content: space-around;
-    background-color: #f5f5f5;
-    padding: 80px 0 64px;
+    background-color: #f5f5f5; 
     font-size: 25px;
     border: none;
     font-size: 26px;
     font-weight: bolder;
     margin-top: none;
-    
-
-
-
-
-
-
+    gap: 30px;
+    padding:100px;
 }
 
 
@@ -127,11 +132,9 @@ fieldset .qlq{
     flex-direction: column;
     text-align: center;
     font-family:'sans-serif';
-    padding: 80px 0 64px;
+    padding-left: 30px;
     align-items: normal;
-   
-    
-    
+    background-color: #f5f5f5;   
 }
 
 .qlq img {
@@ -175,6 +178,7 @@ a:link{
    overflow: hidden;
    text-align: center;
    padding: auto;
+   background-color: white;
    
   
 }
@@ -205,29 +209,12 @@ a:link{
     padding: 60px;
     width: 25%;
 
-    
-    
 }
 
-
-
-.footer {
-    background-color: black;
-    padding: 50px;
-    font-family: sans-serif;
-    color: aliceblue;
-    text-align: center;
-    height: 15px;
-    align-items: flex-end;
-    flex: 1;
-    display: grid;
-
-}
 
 .card-signup {
     display: flex;
 
-    
 }
 .logomarca{
     background-color: black;
@@ -310,6 +297,46 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
 .btnform:hover{
     background-color: darkgray;
 }
+
+
+
+.sobre ul{
+    display: flex;
+    flex-direction: column;
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-top: 130px;
+    margin-bottom: 130px;
+    gap: 30px;
+    align-items: center;
+    background-color: white;
+}
+
+ul .linha{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    color:#616060;
+    list-style-type: none;
+    width: 700px;
+    
+}
+.hr-fim{
+    width: 700px;
+    margin-left: 350px;
+    color: #616060;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.inst{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 70px;
+}
+
 
 
  
