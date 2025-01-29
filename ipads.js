@@ -1,18 +1,14 @@
-
-import { setupSignupForm } from './signup.js';
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    setupSignupForm('cardForm');
-});
-
-import { autoToggleCards } from './auto.js';
-
-document.addEventListener('DOMContentLoaded', autoToggleCards);
-
-
-
-import { products  } from './products.js';
+const products = [
+    { id: 1, name: "iPad Pro", price: 8999, image: "ipad.jpg" },
+    { id: 2, name: "iPad Air", price: 6499, image: "iPad-2020.png" },
+    { id: 3, name: "iPad Mini", price: 4999, image: "ipadpink.webp" },
+    { id: 4, name: "iPad 10ª Geração", price: 5499, image: "ipadair6.webp" },
+    { id: 5, name: "iPad Pro 11", price: 9599, image: "ipadnovo.jpeg" },
+    { id: 6, name: "iPad Air 5ª Geração", price: 6799, image: "ipadair6.webp" },
+    { id: 7, name: "iPad Mini 6ª Geração", price: 5099, image: "1-24.webp" },
+    { id: 8, name: "iPad 9ª Geração", price: 3999, image: "Best-iPadT2.webp" }
+    
+];
 
 function renderProducts() {
     const grid = document.getElementById('product-grid');
@@ -48,10 +44,4 @@ function calculateTotalValue() {
 renderProducts();
 console.log("Produtos caros:", filterExpensiveProducts(8000));
 console.log("Valor total do inventário:", calculateTotalValue().toLocaleString('pt-BR'));
-
-
-function salvarDados(){
-    localStorage.info = document.getElementById("nome").value
-    
-}
 
