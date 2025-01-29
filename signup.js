@@ -63,4 +63,40 @@ export function setupSignupForm(formId) {
 }
 
 
+function adicionarDados() {
+  const email = document.getElementById("email").value;
+  const nome = document.getElementById("nome").value;
+  const telefone = document.getElementById("telefone").value;
+  const senha = document.getElementById("senha").value;
+
+  // Verifica se o Local Storage está disponível no navegador
+  if (typeof(Storage) !== "undefined") {
+
+    const dados = {
+      email: email,
+      nome: nome,
+      telefone: telefone,
+      senha: senha
+    };
+
+    const dadosJSON = JSON.stringify(dados);
+    localStorage.setItem("dados_usuario", dadosJSON);
+
+    console.log("Dados adicionados ao Local Storage com sucesso!");
+
+    // Limpa o formulário após salvar os dados (opcional)
+    document.getElementById("formularioUsuario").reset();
+
+  } else {
+    console.error("Local Storage não suportado neste navegador.");
+  }
+}
+
+
+
+
+
+
+
+
   

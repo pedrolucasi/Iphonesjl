@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
 
@@ -35,13 +36,43 @@
            
                 <label for="senha">Senha</label>
                 <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required><br>
-                <button onclick="salvarDados()" type="submit" class="btnform">Enviar</button>
+                
+                <button onclick="salvar()" type="submit" class="btnform">Enviar</button>
+                <script>
+                    function salvar() {
+                             const email = document.getElementById("email").value;
+                             const nome = document.getElementById("nome").value;
+                             const telefone = document.getElementById("telefone").value;
+                             const senha = document.getElementById("senha").value;
+
+                             const novoUsuario = {
+                                 email: email,
+                                 nome: nome,
+                                 telefone: telefone,
+                                 senha: senha
+                             };
+
+                             // Verifica se já existe um array no Local Storage
+                             let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+                             // Adiciona o novo usuário ao array
+                             usuarios.push(novoUsuario);
+
+                             // Salva o array atualizado no Local Storage
+                             localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+                             alert("Dados salvos com sucesso!");
+                             document.getElementById("formularioUsuario").reset();
+                             }
+                         
+             </script>
+                
             </form>
         </div>
 
 
-    <script type="module" src="main.js"></script>
    </main>
+
    <footer id="foot"> 
     <p>copy</p>
    </footer>

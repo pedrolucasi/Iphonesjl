@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <form>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br>
+           
+           
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required><br>
+                
+        <button onclick="verificarLogin()" type="submit" class="btnform">Enviar</button>
+        <script>
+            function verificarLogin() {
+                const email = document.getElementById("email").value;
+                const senha = document.getElementById("senha").value;
+
+                const dadosArmazenados = localStorage.getItem("usuarios");
+
+                if (dadosArmazenados) {
+                    const usuarios = JSON.parse(dadosArmazenados);
+
+                    // Verifica se o usuário existe no array de usuários
+                    const usuarioEncontrado = usuarios.find(usuario =>
+                    usuario.email === email && usuario.senha === senha
+                    );
+
+                    if (usuarioEncontrado) {
+                    alert("Login realizado com sucesso!");
+                    document.getElementById("formularioLogin").reset();
+                    } else {
+                    alert("Email ou senha incorretos.");
+                    }
+                } else {
+                    alert("Nenhum usuário cadastrado.");
+                }
+                }
+        </script>
+    </form>
+</body>
+</html>
