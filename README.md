@@ -14,18 +14,13 @@
 
 ## Execução
 
-Siga os passos abaixo para executar o projeto:
+Para executar o projeto:
 
-1. Clone o repositório:
-   
-   $ git clone https://github.com/pedrolucasi/Iphonesjl.git
-   
+1. Clone o repositório:  
+   $ git clone https://github.com/pedrolucasi/Iphonesjl.git  
 2. Entre no diretorio:
-. 
-    $ cd iphonesjl
-   
-3. Instale as dependencias:
-   
+    $ cd iphonesjl   
+3. Instale as dependencias:   
    $ npm install
        ou
     $ yarn
