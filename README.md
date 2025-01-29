@@ -22,13 +22,13 @@ Siga os passos abaixo para executar o projeto:
    
 2. Entre no diretorio:
 . 
-   $ cd iphonesjl
+    $ cd iphonesjl
    
 3. Instale as dependencias:
    
    $ npm install
        ou
-   $ yarn
+    $ yarn
 ---
 
 ## Colaboradores
