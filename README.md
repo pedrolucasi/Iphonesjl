@@ -10,7 +10,7 @@
 - ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 - ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 - ![LocalStorage](https://img.shields.io/badge/LocalStorage-005A90?style=for-the-badge&logo=databricks&logoColor=white)
-- ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+- [Vite](https://vitejs.dev/)
 
 ---
 
