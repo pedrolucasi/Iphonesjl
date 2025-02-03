@@ -12,7 +12,7 @@
     
    <main>
     <div class="logomarca">
-        <img src="images/IPHONES JL LOGO TRANSPARENTE.png" alt="Logo do site" width="400" height="400">
+        <a href="index.html"><img src="images/IPHONES JL LOGO TRANSPARENTE.png" alt="Logo do site" width="400" height="400"></a>
     </div>
        
         <div class="form-group">
@@ -23,47 +23,95 @@
                 </h2><br>
                 
                 <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required ><br>
+                <span id="nomeError" class="error"></span><br>
 
 
                 <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required><br>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone"  required><br>
+                <span id="telefoneError" class="error"></span><br> 
                 
           
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br>
+                <span id="emailError" class="error"></span><br>
            
            
                 <label for="senha">Senha</label>
                 <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required><br>
+                <span id="senhaError" class="error"></span><br>
                 
-                <button onclick="salvar()" type="submit" class="btnform">Enviar</button>
+                <button onclick="validarSalvar()" type="button" class="btnform">Enviar</button>
                 <script>
-                    function salvar() {
-                             const email = document.getElementById("email").value;
-                             const nome = document.getElementById("nome").value;
-                             const telefone = document.getElementById("telefone").value;
-                             const senha = document.getElementById("senha").value;
+                     function validarSalvar() {
+                            // Limpar mensagens de erro
+                            document.getElementById("nomeError").textContent = "";
+                            document.getElementById("telefoneError").textContent = "";
+                            document.getElementById("emailError").textContent = "";
+                            document.getElementById("senhaError").textContent = "";
 
-                             const novoUsuario = {
-                                 email: email,
-                                 nome: nome,
-                                 telefone: telefone,
-                                 senha: senha
-                             };
+                            // Validar campos
+                            let nome = document.getElementById("nome").value;
+                            let telefone = document.getElementById("telefone").value;
+                            let email = document.getElementById("email").value;
+                            let senha = document.getElementById("senha").value;
 
-                             // Verifica se já existe um array no Local Storage
-                             let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+                            let formValido = true;
 
-                             // Adiciona o novo usuário ao array
-                             usuarios.push(novoUsuario);
+                            if (nome === "") {
+                                document.getElementById("nomeError").textContent = "Nome é obrigatório.";
+                                formValido = false;
+                            }
 
-                             // Salva o array atualizado no Local Storage
-                             localStorage.setItem("usuarios", JSON.stringify(usuarios));
+                            if (telefone === "") {
+                                document.getElementById("telefoneError").textContent = "Telefone é obrigatório.";
+                                formValido = false;
+                            }
 
-                             alert("Dados salvos com sucesso!");
-                             document.getElementById("formularioUsuario").reset();
-                             }
+                            if (email === "") {
+                                document.getElementById("emailError").textContent = "E-mail é obrigatório.";
+                                formValido = false;
+                            }
+
+                            if (senha === "") {
+                                document.getElementById("senhaError").textContent = "Senha é obrigatória.";
+                                formValido = false;
+                            }
+
+                            // Salvar dados se o formulário for válido
+                            if (formValido) {
+                                salvar(nome, telefone, email, senha);
+                            }
+                            }
+
+                            function salvar(nome, telefone, email, senha) {
+                            const novoUsuario = {
+                                email: email,
+                                nome: nome,
+                                telefone: telefone,
+                                senha: senha
+                            };
+
+                            // Verifica se já existe um array no Local Storage
+                            let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+                            // Verifica se o email já existe
+                            const emailJaExiste = usuarios.some(usuario => usuario.email === email);
+
+                            if (emailJaExiste) {
+                                alert("Este email já está cadastrado.");
+                                return;
+                            }
+
+                            // Adiciona o novo usuário ao array
+                            usuarios.push(novoUsuario);
+
+                            // Salva o array atualizado no Local Storage
+                            localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+                            alert("Dados salvos com sucesso!");
+                            document.getElementById("cardform").reset();
+                            }
                          
              </script>
                 
