@@ -7,11 +7,11 @@ export default defineConfig({
             input:{
 
            
-        main:'./public/index.html',
-        iphones:'./public/iphones.html',
-        ipads:'./public/ipads.html',
-        mac:'./public/mac.html',
-        signup:'./public/signup.html',
+        main:'/public/index.html',
+        iphones:'/public/iphones.html',
+        ipads:'/public/ipads.html',
+        mac:'/public/mac.html',
+        signup:'/public/signup.html',
     
     }, 
     },
