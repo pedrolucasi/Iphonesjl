@@ -44,13 +44,13 @@
                 <button onclick="validarSalvar()" type="button" class="btnform">Enviar</button>
                 <script>
                      function validarSalvar() {
-                            // Limpar mensagens de erro
+                            
                             document.getElementById("nomeError").textContent = "";
                             document.getElementById("telefoneError").textContent = "";
                             document.getElementById("emailError").textContent = "";
                             document.getElementById("senhaError").textContent = "";
 
-                            // Validar campos
+                           
                             let nome = document.getElementById("nome").value;
                             let telefone = document.getElementById("telefone").value;
                             let email = document.getElementById("email").value;
@@ -78,7 +78,7 @@
                                 formValido = false;
                             }
 
-                            // Salvar dados se o formulário for válido
+                            
                             if (formValido) {
                                 salvar(nome, telefone, email, senha);
                             }
@@ -92,10 +92,10 @@
                                 senha: senha
                             };
 
-                            // Verifica se já existe um array no Local Storage
+                            
                             let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-                            // Verifica se o email já existe
+                            
                             const emailJaExiste = usuarios.some(usuario => usuario.email === email);
 
                             if (emailJaExiste) {
@@ -103,10 +103,10 @@
                                 return;
                             }
 
-                            // Adiciona o novo usuário ao array
+                            
                             usuarios.push(novoUsuario);
 
-                            // Salva o array atualizado no Local Storage
+                            
                             localStorage.setItem("usuarios", JSON.stringify(usuarios));
 
                             alert("Dados salvos com sucesso!");
