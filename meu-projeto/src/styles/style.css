@@ -30,6 +30,10 @@
     display: none;
 }
 
+.error{
+    color: red;
+    font-size: 12px;
+}
 
 header {
     background-color: black;
