@@ -26,8 +26,8 @@ header {
 
 }
 .image-container {
-    width: auto; /* Ajuste o tamanho conforme necessário */
-    height: auto; /* Ajuste o tamanho conforme necessário */
+    width: auto; 
+    height: auto; 
     overflow: hidden;
 
 

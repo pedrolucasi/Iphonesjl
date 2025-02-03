@@ -1,11 +1,11 @@
 const products = [
-    { id: 1, name: "MacBook Air", price: 12999, image: "iplace.avif" },
+    { id: 1, name: "MacBook Air", price: 12999, image: "macbookpro14.jpg" },
     { id: 2, name: "MacBook Pro 13", price: 16999, image: "macbook-pro.png" },
     { id: 3, name: "MacBook Pro 14", price: 21999, image: "macbookpro14.jpg" },
-    { id: 4, name: "MacBook Pro 16", price: 27999, image: "iplace.avif" },
+    { id: 4, name: "MacBook Pro 16", price: 27999, image: "macbook-pro.png" },
     { id: 5, name: "MacBook Air M2", price: 14999, image: "mac-card.jpg" },
-    { id: 6, name: "MacBook Pro 14 M2 Pro", price: 24999, image: "mac15.jpg" },
-    { id: 7, name: "MacBook Pro 16 M2 Pro", price: 31999, image: "macbook-air-m1.webp" },
+    { id: 6, name: "MacBook Pro 14 M2 Pro", price: 24999, image: "mac-card-140.jpg" },
+    { id: 7, name: "MacBook Pro 16 M2 Pro", price: 31999, image: "mac-card.jpg" },
     { id: 8, name: "MacBook Pro 16 M1 Max", price: 34999, image:"mac-card-140.jpg" }
 
   ];

@@ -6,7 +6,6 @@
     
   //});
 
-
 export function getFormData(formId) {
   const form = document.getElementById(formId);
   if (!form) {
@@ -69,7 +68,7 @@ function adicionarDados() {
   const telefone = document.getElementById("telefone").value;
   const senha = document.getElementById("senha").value;
 
-  // Verifica se o Local Storage está disponível no navegador
+
   if (typeof(Storage) !== "undefined") {
 
     const dados = {
@@ -84,7 +83,7 @@ function adicionarDados() {
 
     console.log("Dados adicionados ao Local Storage com sucesso!");
 
-    // Limpa o formulário após salvar os dados (opcional)
+   
     document.getElementById("formularioUsuario").reset();
 
   } else {
